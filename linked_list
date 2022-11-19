@@ -132,7 +132,7 @@ void delete ()
 void main()
 {
     int n, a = 0, choice;
-    printf("\n Enter how many nodes you want to crete : ");
+    printf("\n Enter how many nodes you want to create : ");
     scanf("%d", &n);
     while (a < n)
     {
