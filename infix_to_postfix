@@ -63,7 +63,7 @@ int check_precedence(char op)
     }
 }
 
-void infixToPostfix(char infix[], char postfix[])
+void infixToPostfix()
 {
     char temp, item;
     int i = 0, j = 0;
@@ -118,7 +118,7 @@ int main()
 {
     printf("\n Enter a valid infix expression: ");
     gets(infix);
-    infixToPostfix(infix, postfix);
+    infixToPostfix();
     printf("\npostfix expression is %s", postfix);
     return 0;
 }
