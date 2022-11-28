@@ -1,0 +1,115 @@
+#include <stdio.h>
+#include <stdlib.h>
+int i, size, f = -1, r = -1, count = 0;
+
+void enqueue(int *queue)
+{
+    if (count == size)
+    {
+        printf("\n queue is overflow");
+    }
+    else if (f == -1 && r == -1)
+    {
+        f = 0, r = 0;
+        printf("\n Enter data : ");
+        scanf("%d", &queue[f]);
+        count++;
+    }
+    else
+    {
+        f = (f + 1) % size;
+        printf("\n Enter data : ");
+        scanf("%d", &queue[f]);
+        count++;
+    }
+}
+
+void dequeue(int *queue)
+{
+    if (f == -1 && r == -1)
+    {
+        printf("\n queue is empty");
+    }
+    else if (f == r)
+    {
+        printf("\n %d deleted", queue[r]);
+        f = -1;
+        r = -1;
+        count--;
+    }
+    else
+    {
+        printf("\n %d deleted", queue[r]);
+        r = (r + 1) % size;
+        count--;
+    }
+}
+
+void peak(int *queue)
+{
+    if (f == -1 && r == -1)
+    {
+        printf("\n queue is empty");
+    }
+    else
+    {
+        printf("\n Top element is : %d", queue[f]);
+    }
+}
+
+void display(int *queue)
+{
+    int flag = r;
+    int temp = count;
+    if (temp == 0)
+    {
+        printf("\n queue is empty");
+    }
+    else
+    {
+        printf("\n Data stored is : ");
+        while (temp != 0)
+        {
+            printf("%d ", queue[flag]);
+            flag = (flag + 1) % size;
+            temp--;
+        }
+    }
+}
+
+void main()
+{
+
+    int choice;
+    printf("\n Enter size of circular queue : ");
+    scanf("%d", &size);
+    int queue[size];
+    while (1)
+    {
+        printf("\n 1.enqueue \t 2.dequeue \t 3.peak \t 4.display");
+        printf("\n Enter your choice : ");
+        scanf("%d", &choice);
+        switch (choice)
+        {
+        case 1:
+            enqueue(&queue);
+            break;
+
+        case 2:
+            dequeue(&queue);
+            break;
+
+        case 3:
+            peak(&queue);
+            break;
+
+        case 4:
+            display(&queue);
+            break;
+
+        default:
+            printf("wrong choice");
+            break;
+        }
+    }
+}
