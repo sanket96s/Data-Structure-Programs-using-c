@@ -27,6 +27,7 @@ struct node *create()
         printf("\n right child of %d ", x);
         nn->right = create();
     }
+    return nn;
 }
 
 void preorder(struct node *root)
