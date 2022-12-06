@@ -19,6 +19,7 @@ void lsearch(int *arr, int size)
     if (s = 0)
     {
         printf("\n element not found");
+
     }
 }
 
@@ -47,6 +48,7 @@ void bsearch(int *arr, int size)
         else
         {
             printf("\n element not found");
+            s++;
         }
     }
 }
