@@ -37,7 +37,7 @@ void enqueue(struct queue *q, int val)
     {
         q->r++;
         q->arr[q->r] = val;
-        // printf("Enqued element: %d\n", val);
+        printf("Enqued element: %d\n", val);
     }
 }
 
@@ -58,13 +58,11 @@ int dequeue(struct queue *q)
 
 int main()
 {
-    // Initializing Queue (Array Implementation)
     struct queue q;
     q.size = 400;
     q.f = q.r = 0;
     q.arr = (int *)malloc(q.size * sizeof(int));
 
-    // BFS Implementation
     int node;
     int i = 1;
     int visited[7] = {0, 0, 0, 0, 0, 0, 0};
