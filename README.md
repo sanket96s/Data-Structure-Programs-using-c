@@ -34,7 +34,7 @@
 
 17. **linear_binary_search.c**: This code is your guide to the efficient exploration of sorted collections. Whether you're traversing linearly or dividing and conquering with binary search, this script makes finding elements a thrilling and rewarding pursuit! 🔍🎯
 
-18. **linked_list.c**: Linked lists redefine the landscape of data structures, offering flexibility and efficiency. Traverse through nodes, experience dynamic connections, and witness the power of managing data in a linked fashion. Linked lists are your gateway to elegant data organization! 🔗📁
+18. **linkedList.c**: This C program creates a singly linked list and allows users to add, delete, and display nodes. It offers a simple menu-driven interface for user interaction and terminates upon user request. 🔗📁
 
 19. **multiple_parenthesis_balancing.c**: This script guides you through the intricacies of maintaining balance, making parenthesis handling a smooth and error-free process! ⚖️👥
 
