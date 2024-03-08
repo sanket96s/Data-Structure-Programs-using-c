@@ -1,6 +1,6 @@
 <h1>Data structures</h1>
 
-1. **array_operations.c**: Arrays, the backbone of data storage, come alive in this script. Whether you're manipulating elements, performing operations, or just diving into the array world, this code is your guide to mastering the art of array operations. 💪📊
+1. **array_operations.c**: This C program enables users to insert, display, and delete elements from an array. It utilizes a menu-driven interface for user interaction, allowing them to perform these operations conveniently. 💪📊
 
 2. **avl_tree.c**: This code brings you the magic of self-balancing binary search trees, ensuring efficient searching, insertion, and deletion operations. With its elegant algorithms, the AVL tree code is your ticket to a harmonious and well-balanced data structure experience. 🌳✨
 
