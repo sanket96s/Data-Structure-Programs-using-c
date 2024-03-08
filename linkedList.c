@@ -1,16 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+// Global variables
 int count = 0, i;
 
+// Node structure
 struct node
 {
     int data;
     struct node *next;
 };
 
+// Head and temp pointers
 struct node *head = NULL;
 struct node *temp = NULL;
 
+// Function to create a node
 void create()
 {
     struct node *nn;
@@ -31,6 +36,7 @@ void create()
     }
 }
 
+// Function to display the linked list
 void display()
 {
     i = 0;
@@ -44,6 +50,7 @@ void display()
     }
 }
 
+// Function to add a node at a given position
 void add()
 {
     struct node *nn;
@@ -93,7 +100,8 @@ void add()
     }
 }
 
-void delete ()
+// Function to delete a node at a given position
+void delete()
 {
     struct node *Delete;
     int p;
@@ -126,22 +134,27 @@ void delete ()
             free(Delete);
             count--;
         }
+        printf("\n Data deleted Successfully");
     }
 }
 
+// Main function
 void main()
 {
     int n, a = 0, choice;
     printf("\n Enter how many nodes you want to create : ");
     scanf("%d", &n);
+    // Creating nodes
     while (a < n)
     {
         create();
         a++;
     }
+    // Menu-driven loop for performing linked list operations
     while (a != 0)
     {
-        printf("\n 1.add \t 2.delete \t 3.display \t 4.no.of_nodes 5.end_program");
+        printf("\n");
+        printf("\n 1.add \n 2.delete \n 3.display \n 4.no.of_nodes \n 5.end_program");
         printf("\n Enter your choice : ");
         scanf("%d", &choice);
         switch (choice)
@@ -159,7 +172,7 @@ void main()
             break;
 
         case 4:
-            printf("list have %d nodes : ", count);
+            printf("list have %d nodes", count);
             break;
 
         case 5:
