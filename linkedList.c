@@ -139,7 +139,7 @@ void delete()
 }
 
 // Main function
-void main()
+int main()
 {
     int noOfNodes, createdNode = 0, choice;
     printf("\n Enter how many nodes you want to create : ");
@@ -177,10 +177,10 @@ void main()
 
         case 5:
             return 0;
-            break;
 
         default:
             printf("\n Wrong choice!");
         }
     }
+    return 0;
 }
