@@ -1,6 +1,3 @@
-// Program to perform operations on array
-// Operations are insertion, creation, deletion, and displaying
-
 #include <stdio.h>
 
 // Function to display elements of the array
@@ -51,32 +48,24 @@ void insert(int *array, int size, int *no_elements)
 // Function to delete an element from the array
 void delete(int *array, int size, int *no_elements)
 {
-    // Check if the array is empty
-    if (*no_elements == 0)
+    int position;
+    printf("\n Enter index to delete data: ");
+    scanf("%d", &position);
+    // Check if the index is within bounds
+    if (position >= size || position < 0)
     {
-        printf("\n Array is empty");
+        printf("\n Out of bound position");
     }
     else
     {
-        int position;
-        printf("\n Enter index to delete data: ");
-        scanf("%d", &position);
-        // Check if the index is within bounds
-        if (position >= *no_elements || position < 0)
+        // Shift elements to overwrite the deleted element
+        for (int i = position; i < size - 1; i++)
         {
-            printf("\n Out of bound position");
+            array[i] = array[i + 1];
         }
-        else
-        {
-            // Shift elements to overwrite the deleted element
-            for (int i = position; i < size - 1; i++)
-            {
-                array[i] = array[i + 1];
-            }
-            array[size - 1] = 0;
-            (*no_elements)--;
-            printf("\n Element deleted successfully");
-        }
+        array[size - 1] = 0;
+        (*no_elements)--;
+        printf("\n Element deleted successfully");
     }
 }
 
@@ -93,6 +82,7 @@ int main()
     {
         scanf("%d", &array[i]);
     }
+    // default values for array is 0 that is when no data is present its value is 0
     for (i = no_elements; i < size; i++)
     {
         array[i] = 0;
@@ -106,13 +96,13 @@ int main()
         switch (choice)
         {
         case 1:
-            insert(array, size, &no_elements);
+            insert(array, size, &no_elements); // Insert operation
             break;
         case 2:
-            delete (array, size, &no_elements);
+            delete (array, size, &no_elements); // Delete operation
             break;
         case 3:
-            display(array, size);
+            display(array, size); // Display operation
             break;
         case 4:
             // Exit the program
