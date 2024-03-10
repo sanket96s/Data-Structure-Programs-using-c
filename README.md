@@ -14,7 +14,7 @@
 
 7. **circular_doubly_linked_list.c**: This code brings you the magic of doubly linked lists that form a circular loop. Traverse through nodes in both directions, experiencing the seamless connection of elements. Circular doubly linked lists redefine the elegance of data organization! 🔄🔗
 
-8. **circular_linked_list.c**: Circular linked lists add a twist to traditional linked structures by forming a loop, allowing for continuous traversal. Dive into the circular world, where each node is a gateway to the next, creating a seamless and fascinating data structure journey! 🔄🔗
+8. **circularLinkedList.c**: Circular linked lists add a twist to traditional linked structures by forming a loop, allowing for continuous traversal. Dive into the circular world, where each node is a gateway to the next, creating a seamless and fascinating data structure journey! 🔄🔗
 
 9. **circular_queue.c**: Circular queues offer a seamless way to manage data, and this code is your gateway to mastering the art of enqueueing and dequeueing elements in a circular fashion. Get ready for a revolving experience in data structure manipulation! 🔄🧑‍🤝‍🧑
 
