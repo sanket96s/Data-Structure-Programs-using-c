@@ -59,7 +59,7 @@ void add()
     i = 1;
     printf("\n Enter the position to insert data : ");
     scanf("%d", &position);
-    if (position > count + 1)
+    if (position > count + 1 || position < 1)
     {
         printf("\n wrong position ");
     }
@@ -97,6 +97,7 @@ void add()
             temp->next = nn;
             count++;
         }
+        printf("\n Data inserted successfully");
     }
 }
 
@@ -108,7 +109,7 @@ void delete()
     i = 1;
     printf("\n Enter the position to delete data : ");
     scanf("%d", &position);
-    if (position > count)
+    if (position > count || position < 1)
     {
         printf("\n wrong position ");
     }
