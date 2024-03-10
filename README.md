@@ -14,13 +14,13 @@
 
 7. **circular_doubly_linked_list.c**: This code brings you the magic of doubly linked lists that form a circular loop. Traverse through nodes in both directions, experiencing the seamless connection of elements. Circular doubly linked lists redefine the elegance of data organization! 🔄🔗
 
-8. **circularLinkedList.c**: Circular linked lists add a twist to traditional linked structures by forming a loop, allowing for continuous traversal. Dive into the circular world, where each node is a gateway to the next, creating a seamless and fascinating data structure journey! 🔄🔗
+8. **circularLinkedList.c**: This C program implements a circular singly linked list with functionalities to create nodes, display the list, add nodes at specified positions, and delete nodes from specified positions. It provides a user-friendly menu-driven interface allowing users to interact with the linked list. The program continues executing until the user chooses to end it. 🔄🔗
 
 9. **circular_queue.c**: Circular queues offer a seamless way to manage data, and this code is your gateway to mastering the art of enqueueing and dequeueing elements in a circular fashion. Get ready for a revolving experience in data structure manipulation! 🔄🧑‍🤝‍🧑
 
 10. **dfs_graph_traversal.c**: This code takes you on a deep dive into graph exploration, unraveling paths and discovering nodes in a recursive and systematic manner. DFS graph traversal becomes an adventure, promising surprises at every turn! 🌐🚀
 
-11. **doubly_linked_list.c**: Navigate the world of linked lists with this code! Doubly linked lists enhance the traditional linked structure by allowing traversal in both directions. Experience the flexibility and efficiency of managing elements with bidirectional connections. Doubly linked lists redefine the elegance of data organization! 🔗🔄
+11. **doublyLinkedList.c**: This C program implements a doubly linked list with basic operations such as creating nodes, displaying the list, adding nodes at specified positions, and deleting nodes from specified positions. It provides a user-friendly menu-driven interface allowing users to perform these operations on the linked list. 🔗🔄
 
 12. **hashing_open_addressing.c**: Hashing becomes an exciting journey as elements find their homes using open addressing techniques. This code introduces you to the efficient world of resolving collisions and ensuring a smooth mapping of keys to values. 🗝️🏡
 
