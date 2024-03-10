@@ -141,11 +141,11 @@ void delete()
 // Main function
 int main()
 {
-    int noOfNodes, createdNode = 0, choice;
+    int noOfNodesToCreate, createdNode = 0, choice;
     printf("\n Enter how many nodes you want to create : ");
-    scanf("%d", &noOfNodes);
+    scanf("%d", &noOfNodesToCreate);
     // Creating nodes
-    while (createdNode < noOfNodes)
+    while (createdNode < noOfNodesToCreate)
     {
         create();
         createdNode++;
