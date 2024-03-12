@@ -9,6 +9,7 @@ struct node
 
 struct node *top = NULL;
 
+// Function to create a new node and push it onto the stack
 void create()
 {
     struct node *nn;
@@ -27,9 +28,10 @@ void create()
     }
 }
 
+// Function to display all elements of the stack
 void display()
 {
-    struct node *point = 0;
+    struct node *point = NULL;
     point = top;
     if (point == 0)
     {
@@ -47,6 +49,7 @@ void display()
     }
 }
 
+// Function to push an element onto the stack
 void push()
 {
     struct node *nn;
@@ -55,8 +58,10 @@ void push()
     scanf("%d", &nn->data);
     nn->next = top;
     top = nn;
+    printf("\n Data inserted successfully");
 }
 
+// Function to pop an element from the stack
 void pop()
 {
     struct node *Delete;
@@ -69,14 +74,17 @@ void pop()
     {
         free(Delete);
         top = 0;
+        printf("\n Data deleted successfully");
     }
     else
     {
         top = Delete->next;
         free(Delete);
+        printf("\n Data deleted successfully");
     }
 }
 
+// Function to view the top element of the stack
 void peak()
 {
     if (top == 0)
@@ -89,21 +97,25 @@ void peak()
     }
 }
 
-void main()
+int main()
 {
-    int n, a = 0, choice;
+    int noOfNodes, createdNodes = 0, choice;
     printf("\n Enter how many nodes you want to create : ");
-    scanf("%d", &n);
-    while (a < n)
+    scanf("%d", &noOfNodes);
+    // Creating the initial stack with user-defined number of nodes
+    while (createdNodes < noOfNodes)
     {
         create();
-        a++;
+        createdNodes++;
     }
+    // Menu-driven loop for stack operations
     while (1)
     {
-        printf("\n 1.push \t 2.pop \t 3.display \t 4.peak");
+        printf("\n");
+        printf("\n 1.push \n 2.pop \n 3.display \n 4.peak \n 5.exit");
         printf("\n Enter your choice : ");
         scanf("%d", &choice);
+        // Performing operations based on user choice
         switch (choice)
         {
         case 1:
@@ -122,8 +134,12 @@ void main()
             peak();
             break;
 
+        case 5:
+            return 0;
+
         default:
             printf("\n Wrong choice!");
         }
     }
+    return 0;
 }
