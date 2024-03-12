@@ -12,7 +12,7 @@
 
 6. **bucket_sort.c**: This code introduces you to the concept of dividing elements into buckets and sorting each bucket individually, leading to a sorted and organized collection. Explore the simplicity and efficiency of Bucket Sort as you splash into the sorting adventure! 🪣🎉
 
-7. **circular_doubly_linked_list.c**: This code brings you the magic of doubly linked lists that form a circular loop. Traverse through nodes in both directions, experiencing the seamless connection of elements. Circular doubly linked lists redefine the elegance of data organization! 🔄🔗
+7. **circularDoublyLinkedList.c**: This C program implements a doubly linked list with add, delete, and display functionalities. It offers a menu-driven interface for users to interact with the list, allowing them to manipulate nodes and view the list's contents. 🔄🔗
 
 8. **circularLinkedList.c**: This C program implements a circular singly linked list with functionalities to create nodes, display the list, add nodes at specified positions, and delete nodes from specified positions. It provides a user-friendly menu-driven interface allowing users to interact with the linked list. The program continues executing until the user chooses to end it. 🔄🔗
 
