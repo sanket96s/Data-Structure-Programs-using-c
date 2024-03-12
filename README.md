@@ -48,6 +48,6 @@
 
 23. **selection_sort.c**: This code showcases the step-by-step process of selecting the smallest element and placing it in its sorted position. Explore the beauty of sorting through selection, making every iteration a delightful step towards an ordered sequence! 🎯🔄
 
-24. **stack_using_array.c**: Stacks, a versatile data structure, find their expression in this script as elements elegantly push and pop. Explore the last-in-first-out (LIFO) concept and witness how stacks efficiently manage data. Get ready for a stack-tacular experience! 🔄📚
+24. **stackUsingArray.c**: This C program implements a stack data structure with push, pop, peak, and display operations. It utilizes an array-based approach, allowing the user to interactively perform stack operations via a menu-driven interface. 🔄📚
 
 25. **stack_using_linked_list.c**: This code introduces you to the elegance of managing data in a last-in-first-out (LIFO) fashion. Experience the dynamic connections of nodes as elements seamlessly push and pop, making stack operations a captivating and organized experience! 🔗🔄
