@@ -50,4 +50,4 @@
 
 24. **stackUsingArray.c**: This C program implements a stack data structure with push, pop, peak, and display operations. It utilizes an array-based approach, allowing the user to interactively perform stack operations via a menu-driven interface. 🔄📚
 
-25. **stack_using_linked_list.c**: This code introduces you to the elegance of managing data in a last-in-first-out (LIFO) fashion. Experience the dynamic connections of nodes as elements seamlessly push and pop, making stack operations a captivating and organized experience! 🔗🔄
+25. **stackUsingLinkedList.c**: This C program implements a stack using a linked list. It allows users to create, push, pop, display, and peek at elements in the stack. The user interacts with the stack through a menu-driven interface, providing flexibility in stack operations. 🔗🔄
