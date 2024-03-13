@@ -1,61 +1,68 @@
 #include <stdio.h>
 #include <stdlib.h>
-int i, size, f = -1, r = -1;
 
+int i, size, front = -1, rear = -1;
+
+// Function to add an element to the queue
 void enqueue(int *queue)
 {
-    if (f == size)
+    if (front == size - 1)
     {
         printf("\n queue is overflow");
     }
-    else if (f == -1 && r == -1)
+    else if (front == -1 && rear == -1)
     {
-        f = 0, r = 0;
+        front = 0, rear = 0;
         printf("\n Enter data : ");
-        scanf("%d", &queue[f]);
+        scanf("%d", &queue[front]);
+        printf("\n Data inserted successfully");
     }
     else
     {
-        f++;
+        front++;
         printf("\n Enter data : ");
-        scanf("%d", &queue[f]);
+        scanf("%d", &queue[front]);
+        printf("\n Data inserted successfully");
     }
 }
 
+// Function to remove an element from the queue
 void dequeue(int *queue)
 {
-    if (f == -1 && r == -1)
+    if (front == -1 && rear == -1)
     {
         printf("\n queue is empty");
     }
-    else if (f == r)
+    else if (front == rear)
     {
-        printf("\n %d deleted", queue[r]);
-        f = -1;
-        r = -1;
+        printf("\n %d deleted", queue[rear]);
+        front = -1;
+        rear = -1;
     }
     else
     {
-        printf("\n %d deleted", queue[r]);
-        r++;
+        printf("\n %d deleted", queue[rear]);
+        rear++;
     }
 }
 
+// Function to get the top element of the queue without removing it
 void peak(int *queue)
 {
-    if (f == -1 && r == -1)
+    if (front == -1 && rear == -1)
     {
         printf("\n queue is empty");
     }
     else
     {
-        printf("\n Top element is : %d", queue[f]);
+        printf("\n Top element is : %d", queue[front]);
     }
 }
 
+// Function to display all elements in the queue
 void display(int *queue)
 {
-    int count = f;
+    int count = front;
     if (count == -1)
     {
         printf("\n queue is empty");
@@ -71,39 +78,44 @@ void display(int *queue)
     }
 }
 
-void main()
+// Main function
+int main()
 {
-
     int choice;
     printf("\n Enter size of queue : ");
     scanf("%d", &size);
     int queue[size];
     while (1)
     {
-        printf("\n 1.enqueue \t 2.dequeue \t 3.peak \t 4.display");
+        printf("\n");
+        printf("\n 1.enqueue \n 2.dequeue \n 3.peak \n 4.display \n 5.exit");
         printf("\n Enter your choice : ");
         scanf("%d", &choice);
         switch (choice)
         {
         case 1:
-            enqueue(&queue);
+            enqueue(queue);
             break;
 
         case 2:
-            dequeue(&queue);
+            dequeue(queue);
             break;
 
         case 3:
-            peak(&queue);
+            peak(queue);
             break;
 
         case 4:
-            display(&queue);
+            display(queue);
             break;
+
+        case 5:
+            return 0;
 
         default:
             printf("wrong choice");
             break;
         }
     }
+    return 0;
 }
