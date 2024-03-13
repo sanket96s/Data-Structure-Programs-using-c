@@ -42,9 +42,7 @@
 
 21. **queueUsingArray.c**: This C program implements a basic queue data structure using arrays. It allows enqueue, dequeue, peek, and display operations on the queue. 🔄📦
 
-22. **queue_using_linked_list.c**: Queues, a fundamental data structure, come to life as elements seamlessly enter
-
- and exit the queue. This script guides you through the dynamic connections of nodes, making queue operations a smooth and organized experience. Get ready for a queue adventure! 🔗🔄
+22. **queueUsingLinkedList.c**: This C program implements a queue using a linked list. It allows enqueue, dequeue, peek, and display operations on the queue. 🔗🔄
 
 23. **selection_sort.c**: This code showcases the step-by-step process of selecting the smallest element and placing it in its sorted position. Explore the beauty of sorting through selection, making every iteration a delightful step towards an ordered sequence! 🎯🔄
 
