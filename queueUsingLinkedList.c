@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int count = 0;
 
 struct node
@@ -11,6 +12,7 @@ struct node
 struct node *front = NULL;
 struct node *rear = NULL;
 
+// Function to create a new node and add it to the queue
 void create()
 {
     struct node *nn;
@@ -32,6 +34,7 @@ void create()
     }
 }
 
+// Function to display all elements in the queue
 void display()
 {
     struct node *point = 0;
@@ -52,6 +55,7 @@ void display()
     }
 }
 
+// Function to add an element to the queue
 void enqueue()
 {
     struct node *nn;
@@ -59,36 +63,51 @@ void enqueue()
     printf("\n Enter data to insert : ");
     scanf("%d", &nn->data);
     nn->next = 0;
-    front->next = nn;
-    front = nn;
-    count++;
+    if (count == 0)
+    {
+        front = nn;
+        rear = nn;
+        count++;
+    }
+    else
+    {
+        front->next = nn;
+        front = nn;
+        count++;
+    }
+    printf("\n Data inserted successfully");
 }
 
+// Function to remove an element from the queue
 void dequeue()
 {
     struct node *Delete;
     Delete = rear;
-    if (front == 0)
+    if (count == 0)
     {
         printf("\n queue is underflow");
     }
-    else if (Delete->next == 0)
+    else if (front == rear)
     {
         free(Delete);
         front = 0;
+        rear = 0;
         count--;
+        printf("\n Data deleted successfully");
     }
     else
     {
         rear = Delete->next;
         free(Delete);
         count--;
+        printf("\n Data deleted successfully");
     }
 }
 
+// Function to get the top element of the queue without removing it
 void peak()
 {
-    if (front == 0)
+    if (count == 0)
     {
         printf("\n queue is underflow");
     }
@@ -98,19 +117,21 @@ void peak()
     }
 }
 
-void main()
+// Main function
+int main()
 {
-    int n, a = 0, choice;
+    int noOfNodes, createdNodes = 0, choice;
     printf("\n Enter how many nodes you want to create : ");
-    scanf("%d", &n);
-    while (a < n)
+    scanf("%d", &noOfNodes);
+    while (createdNodes < noOfNodes)
     {
         create();
-        a++;
+        createdNodes++;
     }
     while (1)
     {
-        printf("\n 1.enqueue \t 2.dequeue \t 3.display \t 4.peak");
+        printf("\n");
+        printf("\n 1.enqueue \n 2.dequeue \n 3.display \n 4.peak \n 5.exit");
         printf("\n Enter your choice : ");
         scanf("%d", &choice);
         switch (choice)
@@ -131,8 +152,12 @@ void main()
             peak();
             break;
 
+        case 5:
+            return 0;
+
         default:
             printf("\n Wrong choice!");
         }
     }
+    return 0;
 }
