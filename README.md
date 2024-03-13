@@ -40,7 +40,7 @@
 
 20. **postfix_expression_value.c**:  Witness the elegance of postfix notation as this script guides you through the efficient evaluation of mathematical expressions. Explore the step-by-step process of computing values, making postfix expressions a fascinating journey in data manipulation! ➡️🔢
 
-21. **queue_using_array.c**: This code is your gateway to mastering the art of enqueuing and dequeuing elements in a structured and organized manner. Explore the first-in-first-out (FIFO) concept and witness how queues efficiently manage data. Get ready for a queue-tastic experience! 🔄📦
+21. **queueUsingArray.c**: This C program implements a basic queue data structure using arrays. It allows enqueue, dequeue, peek, and display operations on the queue. 🔄📦
 
 22. **queue_using_linked_list.c**: Queues, a fundamental data structure, come to life as elements seamlessly enter
 
