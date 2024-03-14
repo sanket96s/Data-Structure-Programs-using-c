@@ -16,7 +16,7 @@
 
 8. **circularLinkedList.c**: This C program implements a circular singly linked list with functionalities to create nodes, display the list, add nodes at specified positions, and delete nodes from specified positions. It provides a user-friendly menu-driven interface allowing users to interact with the linked list. The program continues executing until the user chooses to end it. 🔄🔗
 
-9. **circular_queue.c**: Circular queues offer a seamless way to manage data, and this code is your gateway to mastering the art of enqueueing and dequeueing elements in a circular fashion. Get ready for a revolving experience in data structure manipulation! 🔄🧑‍🤝‍🧑
+9. **circularQueue.c**: The provided C code implements a circular queue using an array. It includes functions for enqueueing, dequeueing, peeking, and displaying elements, all controlled by a menu-driven interface. 🔄🧑‍🤝‍🧑
 
 10. **dfs_graph_traversal.c**: This code takes you on a deep dive into graph exploration, unraveling paths and discovering nodes in a recursive and systematic manner. DFS graph traversal becomes an adventure, promising surprises at every turn! 🌐🚀
 
