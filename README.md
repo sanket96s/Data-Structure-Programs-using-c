@@ -22,9 +22,7 @@
 
 11. **doublyLinkedList.c**: This C program implements a doubly linked list with basic operations such as creating nodes, displaying the list, adding nodes at specified positions, and deleting nodes from specified positions. It provides a user-friendly menu-driven interface allowing users to perform these operations on the linked list. 🔗🔄
 
-12. **hashing_open_addressing.c**: Hashing becomes an exciting journey as elements find their homes using open addressing techniques. This code introduces you to the efficient world of resolving collisions and ensuring a smooth mapping of keys to values. 🗝️🏡
-
-13. **hashing_separate_chaining.c**: This code unveils the magic of managing collisions by creating chains of elements at each hash index. Explore the efficiency and elegance of resolving conflicts and maintaining an organized hash table. Hashing with separate chaining becomes an artful experience! 🧑‍🤝‍🧑🔗
+12. **hashTableUsingArray.c**: This C program implements a hash table using quadratic probing for collision resolution. Users can insert and search for data in the hash table via a menu-driven interface. Quadratic probing ensures efficient handling of collisions, enabling quick insertion and retrieval of data within the specified hash table size. 🗝️🏡
 
 14. **implementing_array_as_data_type.c**: This script demonstrates the dynamic implementation of arrays, showcasing their adaptability to store and manipulate various data types. Witness the power of arrays as a fundamental and flexible data structure in the programming landscape! 🌐📚
 
