@@ -34,7 +34,7 @@
 
 17. **multiple_parenthesis_balancing.c**: This script guides you through the intricacies of maintaining balance, making parenthesis handling a smooth and error-free process! ⚖️👥
 
-18. **postfix_expression_value.c**:  Witness the elegance of postfix notation as this script guides you through the efficient evaluation of mathematical expressions. Explore the step-by-step process of computing values, making postfix expressions a fascinating journey in data manipulation! ➡️🔢
+18. **postfixExpressionEvaluation.c**:  The provided C program evaluates a postfix expression using a stack-based approach. It parses the expression character by character, pushing operands onto the stack and performing operations when encountering operators. Finally, it prints the result of the expression evaluation. ➡️🔢
 
 19. **queueUsingArray.c**: This C program implements a basic queue data structure using arrays. It allows enqueue, dequeue, peek, and display operations on the queue. 🔄📦
 
