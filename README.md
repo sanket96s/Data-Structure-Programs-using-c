@@ -24,7 +24,7 @@
 
 12. **hashTableUsingArray.c**: This C program implements a hash table using quadratic probing for collision resolution. Users can insert and search for data in the hash table via a menu-driven interface. Quadratic probing ensures efficient handling of collisions, enabling quick insertion and retrieval of data within the specified hash table size. 🗝️🏡
 
-13. **infix_to_postfix.c**: This code introduces you to the world of converting mathematical expressions, paving the way for efficient evaluation. Experience the elegance of postfix notation as infix expressions gracefully transform, offering a new perspective on expression handling! ➡️🔄
+13. **infixToPostfix.c**: The provided C code converts infix expressions to postfix expressions using a stack-based algorithm. It parses the input infix expression character by character, handling operators and parentheses while maintaining proper precedence. The resulting postfix expression is displayed as output. ➡️🔄
 
 14. **insertion_sort.c**: This code guides you through the simplicity and effectiveness of sorting elements by gradually building a sorted sequence. Explore the step-by-step process of inserting elements into their correct positions, making sorting a delightful and educational experience! 🧩🔍
 
