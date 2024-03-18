@@ -1,61 +1,74 @@
 #include <stdio.h>
 #include <ctype.h>
+
+// Global variables
 int stack[100];
 int top = -1, i = 0;
-char exp[100];
+char expression[100];
 
+// Function to push an element onto the stack
 void push(int x)
 {
     stack[++top] = x;
 }
 
+// Function to pop an element from the stack
 int pop()
 {
     return stack[top--];
 }
 
+// Function to evaluate the postfix expression
 void answer()
 {
-    int n1, n2;
+    int num1, num2;
     char ch;
-    for (i = 0; exp[i] != '\0'; i++)
+
+    // Iterate through each character of the postfix expression
+    for (i = 0; expression[i] != '\0'; i++)
     {
-        ch = exp[i];
+        ch = expression[i];
         if (isdigit(ch))
         {
-            ch = ch - 48;
+            // If the character is a digit, convert it to integer and push onto the stack
+            ch = ch - 48; // Converting character digit to integer
             push(ch);
         }
         else
         {
-            n1 = pop();
-            n2 = pop();
+            // If the character is an operator, pop two operands from the stack, perform operation, and push result back
+            num1 = pop();
+            num2 = pop();
 
             switch (ch)
             {
             case '+':
-                push(n2 + n1);
+                push(num2 + num1);
                 break;
             case '-':
-                push(n2 - n1);
+                push(num2 - num1);
                 break;
             case '*':
-                push(n2 * n1);
+                push(num2 * num1);
                 break;
             case '/':
-                push(n2 / n1);
+                push(num2 / num1);
                 break;
             }
         }
     }
+    // Print the final answer
     printf("\n Answer is : %d", pop());
 }
 
-int main()
+// Main function
+void main()
 {
-    printf("Enter the expression :: ");
-    scanf("%s", exp);
-    printf("%s", exp);
+    // Prompt the user to input a postfix expression
+    printf("Enter the postfix expression (without spaces) : ");
+    scanf("%s", expression);
+    // Print the entered expression
+    printf("\n Expression is : %s ", expression);
+    // Evaluate the expression and print the result
     answer();
-    return 0;
 }
