@@ -1,4 +1,4 @@
-Here's the list of data structure programs arranged alphabetically:
+<h1>Data structures</h1>
 
 1. **array.c**: This C program enables users to insert, display, and delete elements from an array. It utilizes a menu-driven interface for user interaction, allowing them to perform these operations conveniently. 💪📊
 
