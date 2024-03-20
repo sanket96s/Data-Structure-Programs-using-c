@@ -32,7 +32,7 @@
 
 16. **singleLinkedList.c**: This C program creates a singly linked list and allows users to add, delete, and display nodes. It offers a simple menu-driven interface for user interaction and terminates upon user request. 🔗📁
 
-17. **multiple_parenthesis_balancing.c**: This script guides you through the intricacies of maintaining balance, making parenthesis handling a smooth and error-free process! ⚖️👥
+17. **multipleParenthesisBalancing.c**: This C program checks the validity of parentheses in a user-input expression. It utilizes a stack to track opening parentheses and ensures matching pairs are present. The result indicates whether the expression is valid or not. ⚖️👥
 
 18. **postfixExpressionEvaluation.c**:  The provided C program evaluates a postfix expression using a stack-based approach. It parses the expression character by character, pushing operands onto the stack and performing operations when encountering operators. Finally, it prints the result of the expression evaluation. ➡️🔢
 
