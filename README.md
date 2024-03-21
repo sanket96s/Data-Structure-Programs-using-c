@@ -8,7 +8,7 @@
 
 4. **binary_tree_using_linked_list.c**: This code combines the elegance of linked lists with the hierarchical structure of binary trees. Experience the beauty of node connections and tree traversal in a dynamic and linked fashion. Binary trees have never been this captivating! 🌐🌲
 
-5. **bubble_sort.c**: This classic sorting algorithm comes to life in this code, bubbling up the highest elements to their rightful places. Simple, yet effective, the Bubble Sort code teaches you the art of comparing and swapping elements, making sorting a bubbly affair! 🛁🔄
+5. **bubbleSort.c**: The provided C program sorts an array of integers using the bubble sort algorithm. It prompts the user to input the number of elements and then the elements themselves. After sorting the elements in ascending order, it displays the sorted array. 🛁🔄
 
 6. **bucket_sort.c**: This code introduces you to the concept of dividing elements into buckets and sorting each bucket individually, leading to a sorted and organized collection. Explore the simplicity and efficiency of Bucket Sort as you splash into the sorting adventure! 🪣🎉
 
