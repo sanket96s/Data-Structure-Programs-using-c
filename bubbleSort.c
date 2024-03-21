@@ -1,23 +1,8 @@
 #include <stdio.h>
 
-void main()
+void bubbleSort(int *array, int noOfElements)
 {
-    int noOfElements, i, j, temp;
-
-    // Ask user for the number of elements
-    printf("\n Enter number of elements : ");
-    scanf("%d", &noOfElements);
-
-    // Declare an array of size 'n' to store the elements
-    int array[noOfElements];
-
-    // Ask user to input the elements
-    printf("\n Enter the elements : ");
-    for (i = 0; i < noOfElements; i++)
-    {
-        scanf("%d", &array[i]);
-    }
-
+    int i, j, temp;
     // Bubble sort algorithm to sort the elements in ascending order
     for (i = 0; i < noOfElements - 1; i++)
     {
@@ -32,7 +17,26 @@ void main()
             }
         }
     }
+}
 
+void main()
+{
+    int noOfElements, i;
+
+    // Ask user for the number of elements
+    printf("\n Enter number of elements : ");
+    scanf("%d", &noOfElements);
+
+    // Declare an array of size 'n' to store the elements
+    int array[noOfElements];
+
+    // Ask user to input the elements
+    printf("\n Enter the elements : ");
+    for (i = 0; i < noOfElements; i++)
+    {
+        scanf("%d", &array[i]);
+    }
+    bubbleSort(array, noOfElements);
     // Display the sorted elements
     printf("\n Elements after sorting are : ");
     for (i = 0; i < noOfElements; i++)
